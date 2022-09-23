@@ -104,8 +104,8 @@ section#AmenitiesDetails .explor-section {
 /* payment sec start */
 
 #Payment-sec {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .Payment-main h3 {
     padding-bottom: 20px;
@@ -142,7 +142,12 @@ table.table.table-extra {
 .categry-tble tr th {
     width: 65%;
 }
-
+.categry-tble tr th:nth-child(1) {
+    border-right: 1px solid #b9b5b5;
+}
+.categry-tble tr td:nth-child(1) {
+    border-right: 1px solid #b9b5b5;
+}
 .extra-ct tbody td {
     padding: 20px !important;
 }
@@ -208,7 +213,16 @@ table.table.table-extra {
 @media (max-width:992px) {
 section#AmenitiesDetails {
     padding-bottom: 40;
+    padding-top:0px;
+}
+#Payment-sec {
     padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#Payment-sec {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 }
 
@@ -259,6 +273,14 @@ section#AmenitiesDetails {
         margin-right: 0px;
         margin-left: 0px;
     }
+    section#plan-details {
+        padding-top: 20PX;
+        padding-bottom: 20PX;
+    }
+    #Payment-sec {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 @media (max-width:568px) {
@@ -295,7 +317,20 @@ section#AmenitiesDetails {
 .Ament-mian {
     grid-template-columns: repeat(1,1fr);
 }
-
+.Atimg img {
+    width: 100%;
+}
+section#AmenitiesDetails {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+section#Specifications {
+    padding-top: 0px;
+}
+#Payment-sec {
+    padding-top: 34px;
+    padding-bottom: 40px;
+}
 }
 
 @media (max-width:400px) {

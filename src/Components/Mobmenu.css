@@ -51,9 +51,12 @@ body#Topmob-sec {
     width: 100%;
 }
 .logoct img {
-  max-width: 23%;
+  max-width: 35%;
   padding: 10px 0px;
   transition: all ease-in-out 0.6s;
+}
+.is-sticky img {
+  max-width: 23%;
 }
 .logoct {
     text-align: center;
@@ -140,10 +143,13 @@ body#Topmob-sec {
 #mapreacg-sec {
   background-position: center !important;
 }
+
 }
 
 @media (max-width:767px) {
-
+  .menu__item {
+    padding: 6px 24px;
+}
 }
 @media (max-width:667px) {
     #Topmob-sec .btn-rt .get-btn {
@@ -163,7 +169,7 @@ body#Topmob-sec {
 
 @media (max-width:375px) {
   #Topmob-sec .btn-rt .get-btn {
-  font-size: 12px;
-  padding: 7px 8px !important;
+    font-size: 10px;
+    padding: 7px 5px !important;
   }
 }

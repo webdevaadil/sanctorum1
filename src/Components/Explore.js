@@ -80,7 +80,7 @@ const Explore = () => {
             <div className='container'>
                {/* <h3>{exploredata.payment_plan_title}</h3>  */}
                <h3>Specifications</h3>       
-               <h3>{exploredata.specification_title}</h3>
+              
                <div className='specifictab'>
                <Tab.Container id='left-tabs-example' defaultActiveKey="first">
                 <Row g-0="true">

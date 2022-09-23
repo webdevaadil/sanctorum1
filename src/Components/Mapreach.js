@@ -98,7 +98,7 @@ office&&
                 >
                   
               <ul className='tabs-links'>
-              <li className={school ? "active" :undefined} eventkey="School" title="School" onClick={handleSchool}>Hospitals Nearby </li>
+              <li className={school ? "active" :undefined} eventkey="School" title="School" onClick={handleSchool}>Hospitals </li>
               <li className={market ? "active" :undefined} eventkey="Market" title="Market" onClick={handleMarket}>Markets </li>
               <li className={connectivity ? "active" :undefined} eventkey="Connectivity" title="Connectivity" onClick={handleConnectivity}>Connectivity</li>
               {/* <li className={office ? "active" :undefined} eventkey="Offices" title="Offices" onClick={handleOffice}> office</li> */}

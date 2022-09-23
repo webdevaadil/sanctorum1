@@ -56,18 +56,19 @@ window.scrollTo({
 
               <ul className="menu__box">
               <li><a className="menu__item" href="#Quality" smooth="true" offset={-70} duration={500}>Overview</a></li>
+              <li><a className="menu__item" href="#building" smooth="true" offset={-70} duration={500}>building</a></li>
                 <li><a className="menu__item" href="#mapreacg-sec" smooth="true" offset={-70} duration={500}>Location</a></li>
                 <li><a className="menu__item" href="#floorplan" smooth="true" offset={-70} duration={500}>Floor Plan</a></li>
                 <li><a className="menu__item" href="#gallery" smooth="true" offset={-70} duration={500}>Gallery</a></li>
                 <li><a className="menu__item" href="#AmenitiesDetails" smooth="true" offset={-70} duration={500}>Amenities</a></li>
                 <li><a className="menu__item" href="#Specifications" smooth="true" offset={-70} duration={500}>Specifications</a></li> 
                 <li><a className="menu__item" href="#Payment-sec" smooth="true" offset={-70} duration={500}>Payment Plans</a></li>               
-                <li><a className="menu__item" href="#timeline" smooth="true" offset={-70} duration={500}>Construction Status</a></li>                              
+                {/* <li><a className="menu__item" href="#timeline" smooth="true" offset={-70} duration={500}>Construction Status</a></li>                               */}
               </ul>
             </div>
           </div>
           <div className='menu1 logoct'>
-          <Link to="top-sections" smooth="true" offset={-70} duration={800}><img src={logomob1} alt='logo'></img></Link>              
+          <Link to="top-sections" smooth="true" offset={-70} duration={800}><img src={logomob1} alt='logo'className='logo-new'></img></Link>              
           </div>
           <div className='menu1 btn-rt'>              
               <button className='get-btn'><Link to="connect" smooth="true" offset={-60} duration={800}>GET IN TOUCH</Link></button>

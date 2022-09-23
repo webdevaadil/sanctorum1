@@ -34,27 +34,24 @@ return(
 
         <div className='bg-numbers'>
             
-                <div className='number-wrappers'>
-                    <div className='number-colm'>
-                    <h4>{hometwo.section_two_right_colom_title_1} </h4>
-                            <p>{hometwo.section_two_right_colom_content_1} </p>
-                     </div>
-                     <div className='number-colm'>
-                        <h4>{hometwo.section_two_right_colom_title_2} </h4>
-                            <p> {hometwo.section_two_right_colom_content_2} </p>
-                     </div>     
-                     <div className='number-colm'>
-                        <h4>{hometwo.section_two_right_colom_title_3} </h4>
-                            <p> {hometwo.section_two_right_colom_content_3} </p>
-                     </div> 
-                     <div className='number-colm'>
-                        <h4>{hometwo.section_two_right_colom_title_4} </h4>
-                            <p> {hometwo.section_two_right_colom_content_4} </p>
-                     </div> 
-
+            <div className='number-wrappers'>
+                <div className='number-colm'>
+                <h4>{hometwo.section_two_right_colom_title_1} </h4>
+                        <p>{hometwo.section_two_right_colom_content_1} </p>                           
                  </div>
+                 <hr className="hr-line"></hr>
+                 <div className='number-colm'>
+                    <h4>{hometwo.section_two_right_colom_title_2} </h4>
+                        <p> {hometwo.section_two_right_colom_content_2} </p>                            
+                 </div>  
+                 <hr className="hr-line"></hr>   
+                 <div className='number-colm'>
+                    <h4>{hometwo.section_two_right_colom_title_3} </h4>
+                     <p> {hometwo.section_two_right_colom_content_3} </p>
+                 </div> 
+             </div>
 
-        </div>
+    </div>
         </div>
 
 </div>
@@ -62,13 +59,13 @@ return(
 
 
 
-{/* <section id='building'> 
+<section id='building'> 
 <div     className='container'>
            <h4>{hometwo.building_subtitle}</h4>
             <h3>{hometwo.main_title_building}</h3>
 <Slider/>
 </div>
-</section> */}
+</section>
 
 
 

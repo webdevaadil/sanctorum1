@@ -162,12 +162,12 @@ useEffect(() => {
                 <button
                   onClick={showMore}
                   type="button"
-                  className="btn btn-info disabled"
+                  className="disabled showbtn"
                 >
-                  Nothing left ...
+                  Viewed less
                 </button>
               ) : (
-                <button onClick={showMore} type="button" className="btn btn-dark showbtn">
+                <button onClick={showMore} type="button" className="showbtn">
                   Load more
                 </button>
               )}
