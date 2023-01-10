@@ -31,12 +31,7 @@ const test=()=>{
     <div>
         <div className='container'>
         
-        {/* {grndflr && grndflr.map((item,index) => {
-
-          console.log(item)
-        }
-        
-        )} */}
+      
 {grndflr.first_image && grndflr.first_image.url&&  <div className='tab-slider'>
         <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
@@ -46,7 +41,7 @@ const test=()=>{
           alt="First slide"
         />        
       </Carousel.Item>
-      <Carousel.Item>
+      {/* <Carousel.Item>
         <img
           className="d-block w-100"
           src={grndflr.second_image.url}
@@ -74,7 +69,7 @@ const test=()=>{
           alt="Third slide"
         />       
       </Carousel.Item>
-   
+    */}
       </Carousel>
         </div>}
        

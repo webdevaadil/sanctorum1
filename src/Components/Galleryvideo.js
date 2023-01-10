@@ -31,7 +31,7 @@ export default function Galleryvideo() {
 
     const getData = () => {
         
-        fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33')
+        fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/video_gallery/?per_page=100')
             .then((response) => response.json())
             .then((res) => {
                 setvideosData([...videosData, ...res]);
@@ -59,13 +59,13 @@ export default function Galleryvideo() {
 
     useEffect(() => {
         async function gallerycon() {
-            const gallerycondata = await fetch('https://controlf5.co.in/client-demo/sanctorum-wordpress/wp-json/wp/v2/pages/33');
+            const gallerycondata = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/video_gallery/?per_page=100');
             const gallerycondatas = await gallerycondata.json();
             setGlyttl(gallerycondatas.acf);
             // console.log(gallerycondatas.acf);
         }
         gallerycon();
-
+        
     }, [])
 
     let videoRef = useRef();

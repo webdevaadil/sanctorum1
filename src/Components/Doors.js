@@ -1,20 +1,35 @@
-import React from 'react'
-
+import React, { useEffect, useState } from 'react';
 const  Doors = () => {
+  // const [door, setDoor] = useState([]);
+
+  // useEffect(() => {
+  //   async function Doordata(){
+  //             const Doors = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+  //             const Doorss = await Doors.json();
+  //             setDoor(Doorss.acf.doors_windows);
+  //           console.log(Doorss.acf.doors_windows);
+  
+  
+  //   }
+  
+  //   Doordata()
+  // },[])
+  
+
+
   return (
     <div> 
-      <div className='specification-ct'>        
-        <ul>
-          <li>Quality wooden frames with FSC-certified solid core flush doors of 8 feet height and 35mm width. </li>
-          <li>Door handles of Godrej/Hafele/ Yale*. </li>
-          <li>Wall tiles up to 8 feet door height. </li>
-          <li>Sanitary Fittings with Concealed Cistern with eco-friendly dual flush* and the Basin of Kohler/ Duravit/ Roca.
-          </li>
-          <li>Waste Pipes of Supreme/ Skipper/ Oriplast*.</li>
-          <li>Shower Cubicle/ Countertop Basin/ Vanity in Master Toilet.</li>
-          <li>Colour anodized / powder coated Premium Aluminium Sliding or Casement Windows with clear glass and window sills. </li>
-          <li>Large Aluminium Windows in Living Room Balcony.Stainless Steel Glass Railings in Balconies and Terraces.</li>
-        </ul>   
+      <div className='specification-ct'>    
+     {/* <ul>
+          <li>{door.doors_windowsone}</li>
+          <li>{door.doors_windowstwo}</li>
+          <li>{door.doors_windowsthree}</li>
+          <li>{door.doors_windowsfour}</li>
+          <li>{door.doors_windowsfive}</li>
+          <li>{door.doors_windowssix}</li>
+          <li>{door.doors_windowsseven}</li>
+          <li>{door.doors_windowseight}</li>
+        </ul>    */}
      </div>
     </div>
   )

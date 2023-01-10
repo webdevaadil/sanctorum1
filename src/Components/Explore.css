@@ -277,7 +277,8 @@ table.table.table-extra {
     margin-top: 15px;
 }
 .charges_ul span{
-    width: 80%;
+    width: 100%;
+    padding-left: 20px;
 }
 .tabs-three-listingss{
     background-color: #e7e7e7;

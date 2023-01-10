@@ -5,7 +5,7 @@ const Electricals = () => {
         <div>
           <div className='wall-content'>
              <ul>
-              <li> Concealed Polycab/ Havells/ RR Kabel* copper wiring with modular switches of Anchor/ Roma/ Schneider Electric/ Havells/ Legrand*.</li>
+              <li>Concealed Polycab/ Havells/ RR Kabel* copper wiring with modular switches of Anchor/ Roma/ Schneider Electric/ Havells/ Legrand*.</li>
               <li>Energy efficient VRF Air-Conditioning with single outdoor unit per Apartment on an external ledge (Additional Cost). </li>
               <li>TV points in all bedrooms & living rooms.</li>
               <li>Telephone & Optical Fiber provision points in the living room. </li>

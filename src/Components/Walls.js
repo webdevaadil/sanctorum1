@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const  Walls = () => {
+
+  const [wall, setWall] = useState([]);
+  useEffect(() => {
+      async function walldata() {
+          const walls = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+          const wallss = await walls.json();
+          setWall(wallss.acf.specification.walls);
+          //console.log(wallss.acf.specification.walls);
+      }
+      walldata();
+
+    },[])
+
   return (
     <div>
       <div className='specification-ct'>       
          <ul>
-          <li>RCC-framed structure with anti-termite treatment in foundation. </li>
-          <li>Cements used: Ambuja/ OCL/ Lafarge/ Ultratech/ Birla/ ACC/ Ramco*.</li>
-          <li>Paint by certified Nerolac/ Asian Paints/ Berger/ Akzo Nobel applicator*, and other effects as applicable.
-          </li>
+          <li>{wall.wallcontentone}</li>
+          <li>{wall.wallcontenttwo}</li>
+          <li>{wall.wallcontentthree}</li>
          </ul>
     
       </div>

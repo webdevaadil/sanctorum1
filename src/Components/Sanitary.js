@@ -1,6 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 const Sanitary = () => {
+
+  // const [sanitary, setSanitary] = useState([]);
+  // useEffect(() => {
+  //     async function sanitarys() {
+  //         const sanitaryss = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+  //         const sanitarysss = await sanitaryss.json();
+  //         setSanitary(sanitarysss.acf);
+  //         console.log(sanitarysss.acf);
+  //     }
+  //     sanitarys();
+
+  //   },[])
+
+
   return (
     <div>
       <div className='specification-ct'>        
