@@ -9,7 +9,7 @@ export const Tabtwo = () => {
           async function tabtwocontent(){
               const tabtwodata = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
               const tabtwodatashow = await tabtwodata.json();
-                setHometwo(tabtwodatashow.acf);
+                setHometwo(tabtwodatashow.acf.three_bhk);
               //console.log(tabtwodatashow.acf);
           }
           tabtwocontent();
@@ -22,7 +22,6 @@ const [index, setIndex] = useState(0);
 const handleSelect = (selectedIndex, e) => {
   setIndex(selectedIndex);
 };
-
   return (
     <div>
         <div className='container'>

@@ -13,7 +13,7 @@ export const Tabthree = () => {
     console.log(Grndflrdatas.acf.four_bhk);
   }
   useEffect(() => {
-    console.log(grndflr);
+    
 
     Grndflrs();
   }, [])
@@ -24,71 +24,60 @@ const handleSelect = (selectedIndex, e) => {
 };
 
 
-
+const test=()=>{
+  console.log(grndflr);
+}
   return (
     <div>
         <div className='container'>
         
-        {grndflr && grndflr.map((item,index) => {
+        {/* {grndflr && grndflr.map((item,index) => {
 
           console.log(item)
         }
         
-        )}
-
-        <div className='tab-slider'>
+        )} */}
+{grndflr.first_image && grndflr.first_image.url&&  <div className='tab-slider'>
         <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
-        {/* <img
-          className="d-block w-100"
-          src=""
-          alt="First slide"
-        />         */}
-      </Carousel.Item>
-      {/* <Carousel.Item>
         <img
           className="d-block w-100"
-          src={floor3_2}
+          src={grndflr.first_image.url}
+          alt="First slide"
+        />        
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={grndflr.second_image.url}
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={floor3_3}
+          src={grndflr.third_image.url}
           alt="Third slide"
         />       
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={floor3_4}
+          src={grndflr.fourth_image.url}
           alt="Third slide"
         />       
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={floor3_5}
+          src={grndflr.fifth_image.url}
           alt="Third slide"
         />       
       </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={floor3_6}
-          alt="Third slide"
-        />       
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={floor3_7}
-          alt="Third slide"
-        />       
-      </Carousel.Item> */}
+   
       </Carousel>
-        </div>
+        </div>}
+       
       </div> 
       </div>
   )

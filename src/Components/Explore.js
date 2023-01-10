@@ -38,7 +38,7 @@ const Explore = () => {
 
   useEffect(() => {
     async function explorecontent() {
-      const response = await fetch('http://sanctorum.in/wp-sanctorum/wp-admin/wp-json/wp/v2/pages/33');
+      const response = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
       const responsedata = await response.json();
       SetExploredata(responsedata.acf);
       // console.log(responsedata.acf);
