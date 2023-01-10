@@ -5,7 +5,7 @@ export const Tabsdata = () => {
       
         useEffect(() => {
             async function tabcontents(){
-            const tabdatas = await fetch('https://controlf5.co.in/client-demo/react-wordpress/wp-json/wp/v2/pages/33');
+            const tabdatas = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
                     const response = await tabdatas.json();
                     SetTabdata(response.acf.tabs_specification);
                     console.log(response.acf.tabs_specification);

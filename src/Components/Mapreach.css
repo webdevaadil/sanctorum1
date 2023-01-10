@@ -1,39 +1,72 @@
 div#mapreacg-sec {
-    padding-bottom: 130px;
-    padding-top: 130px;
+    padding-bottom:60px;
+    /* padding-top: 60px; */
+    margin: 60px 0px;
+    
+}
+
+#mapreacg-sec{
+    background-image: url(../Components/images/reachmap-bgnew.png);
+     background-position: right !important;
+     width: 100%;
+     background-size: auto;
+     background-repeat: no-repeat;
+     
+ }
+.map-sec1{
+   background-color: #e7e7e7;
+    background-position: center;
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 1px 0px;
+    /* margin: 40px 0px; */
+    
 }
 .reach-map {
     display: flex;
     justify-content: space-between;
     grid-gap: 60px;
+    padding-top: 60px;
+    
+    
+    
 }
 .reach-right .tab-rt{
     padding-top: 30px;
     width: 80%;
+    
 }
 .reach-right .tab-content {
     width: 70%;
+    
 }
 h3.mob-maptitle {
     text-align: center;
     display: none;
+    
 }
 section#react-map h3 {
     text-align: left;
     margin-top: 0;
     margin-bottom: 45px;
+
 }
 section#react-map{
     padding-bottom: 70px;
     padding-top: 70px;
+    
 }
- #mapreacg-sec{
-   background-image: url(../Components/images/reachmap-bg.png);
-    background-position: right !important;
-    width: 100%;
-    background-size: auto;
-    background-repeat: no-repeat;
+.reach-right h3{
+    color: #fff;
 }
+.reach-right h4{
+    color: #fff;
+    letter-spacing: normal;
+}
+
+
+
 /* tab start */
 .tab-rt .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: var(--bs-nav-tabs-link-active-color);
@@ -41,9 +74,11 @@ section#react-map{
     border-color: #e7e7e7;
     border: 1px solid #e7e7e7;
     border-radius: 0px;
+    
 }
 .reach-right ul.mb-3.tab-rt.nav.nav-tabs {
     border: none;
+
 }
 .tab-rt ul.mb-3.tab-rt.nav.nav-tabs {
     display: flex;
@@ -66,6 +101,7 @@ section#react-map{
     border: 1px solid #e7e7e7;
     border-radius: 0px;
     color: #1d1d1d !important;
+    
 }
 .right-content .nav-link:hover {
     color: #1d1d1d;
@@ -103,6 +139,8 @@ section#react-map{
     font-size: 14px;
     line-height: 26px;
     color: #1d1d1d;
+    background-color: #c9d75f;
+    border: 1px solid #c9d75f;
 }
 .tab-rt .nav-link {
     width: 100%;
@@ -126,16 +164,42 @@ section#react-map{
 
 .reach-left {
     width: 50%;
-    border: 1px solid #155c37;
+    
+    
 }
+
+.reach-left iframe{
+    border: 1px solid #155c37;
+
+}
+
+div#map-container-google-1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .reach-right {
     width: 50%;
+    
+    
 }
 iframe.reach-ifram {
     width: 100%;
     height: 444px;
 }
 
+.extra-ct .categry-tble tr:last-child td {
+    border: 0px transparent !important;
+}
+
+.table>tbody {
+    vertical-align: inherit;
+    font-family: 'Red Hat Display', sans-serif;
+    border: 0px solid #f2f2f2;
+    background-color: white;
+}
 
 
 /* responsive */
@@ -148,7 +212,7 @@ iframe.reach-ifram {
 @media (max-width:1200px) {
     #mapreacg-sec {
         background-position: right!important;
-        background-color: #fff !important;
+        background-color: #e7e7e7 !important;
         background-image: none;
     }
     .reach-right .tab-rt {

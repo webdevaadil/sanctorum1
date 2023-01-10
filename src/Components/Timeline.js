@@ -12,14 +12,14 @@ const Timeline = () => {
    
 useEffect(() => {
             async function Timelines(){
-                const timelinedata = await fetch('https://controlf5.co.in/client-demo/react-wordpress/wp-json/wp/v2/pages/33');
+                const timelinedata = await fetch('http://sanctorum.in/wp-sanctorum/wp-admin/wp-json/wp/v2/pages/33');
                 const timelinedatas = await timelinedata.json();
                 setTimeline(timelinedatas.acf);
                 //console.log(timelinedatas.acf);    
             }
             Timelines();
             async function cosntructionss(){
-                const constructiondata = await fetch('https://controlf5.co.in/client-demo/react-wordpress/wp-json/wp/v2/construction_status');
+                const constructiondata = await fetch('http://sanctorum.in/wp-sanctorum/wp-admin/wp-json/wp/v2/construction_status');
                 const constructionpost = await constructiondata.json();
                 setCosntructionsdata(constructionpost);
             }

@@ -6,7 +6,7 @@ const Connectivity = () => {
   const [cnctvy, setCnctvy] = useState([]); 
   useEffect(() => {
       async function connecti() {
-          const connectidata = await fetch('https://controlf5.co.in/client-demo/sanctorum-wordpress/wp-json/wp/v2/pages/33');
+          const connectidata = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
           const connectidatas = await connectidata.json();
           setCnctvy(connectidatas.acf.connectivtiy_data);
           //console.log(connectidatas.acf.connectivtiy_data);

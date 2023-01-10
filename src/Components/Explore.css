@@ -2,7 +2,18 @@
 section#AmenitiesDetails{
     text-align: center;
     padding-bottom:60px;
-    padding-top:0px;
+    padding-top:60px;
+    margin: 60px 0px;
+}
+.amenit-main {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+#AmenitiesDetails {
+    background-image: url(../Components/images/Amenities-bg.png);
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 section#AmenitiesDetails .explor-section {
     text-align: center;
@@ -13,7 +24,7 @@ section#AmenitiesDetails .explor-section {
     grid-gap: 25px;
     text-align: center;
 }
-.At-item1:nth-child(n+6) {
+.At-item1:nth-child(n+7) {
     display: none;
 }
 .explor-section p {
@@ -37,7 +48,13 @@ section#AmenitiesDetails .explor-section {
 .At-item1 {
     box-shadow: 1px 1px 20px 0px #f2f2f2;
     padding: 15px;
-    background: #cce8de;
+    background: #fff;
+}
+.At-item1:hover{
+    background-color: #1c5639 !important;
+}
+.At-item1:hover .Ament-title h5{
+    color: #fff !important;
 }
 .Ament-title h5 {
     font-size: 24px;
@@ -66,21 +83,21 @@ section#AmenitiesDetails .explor-section {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    color: #155c37;
-    background-color: #fff;
-    box-shadow: 1px 1px 20px 0px #f2f2f2;
+    color: #fff;
+    
+    /* box-shadow: 1px 1px 20px 0px #f2f2f2; */
     font-size: 16px;
     font-weight: 600;
-    background-color: #cce8de;
+    background-color: #154b37;
 }
 #Specifications .tab-content>.active {
-    /* box-shadow: 1px 1px 20px 0px #f2f2f2; */
     padding: 20px;
     font-family: 'Red Hat Display', sans-serif;
-    background-color: #cce8de;
+    background-color: #154b37;
+    color: white;
 }
-.tab-des.col-sm-9 {
-    background-color: #cce8de;
+.tab-des{
+    background-color: #154b37;
     box-shadow: 1px 1px 20px 0px #f2f2f2;
 }
 .nav-pills .nav-link {
@@ -109,6 +126,7 @@ section#AmenitiesDetails .explor-section {
 }
 .Payment-main h3 {
     padding-bottom: 20px;
+    color: #155b37;
 }
 #Payment-sec .Payment-main {
     text-align: center;
@@ -124,7 +142,7 @@ section#AmenitiesDetails .explor-section {
     border-top: 3px solid #155b37;
 }
 #Payment-sec .extra-ct  thead {
-    background-color: #f2f2f2;
+    background-color: #abdbcb;
 }
 table.table.table-extra.table-striped .categry-tble td {
     text-align: left;
@@ -144,15 +162,21 @@ table.table.table-extra {
 }
 .categry-tble tr th:nth-child(1) {
     border-right: 1px solid #b9b5b5;
+    background-color: #e7e7e7;
+}
+.categry-tble tr th:nth-child(2) {
+    
+    background-color: #e7e7e7;
 }
 .categry-tble tr td:nth-child(1) {
-    border-right: 1px solid #b9b5b5;
+    border-right: 1px solid #aca9a9;
+
 }
 .extra-ct tbody td {
     padding: 20px !important;
 }
 .categry-tble tr:nth-child(even) {
-    background-color:#f2f2f2;
+    background-color: #eff7f5;
  }
  .table-striped>tbody>tr:nth-of-type(odd)>* {
     --bs-table-accent-bg: #fff;
@@ -184,7 +208,23 @@ table.table.table-extra {
 .extra-ct tbody td:nth-child(14) {
     color: #fff;
 }
-
+.btn_grp{
+    display: flex;
+    justify-content: center;
+}
+.showcontent{
+    display: block;
+}
+.nonecontent{
+    display: none !important;
+}
+.buttonprice{
+    background-color: #155b37;
+    color: #fff;
+    padding: 15px 50px;
+    border: 1pt solid rgba(0, 0, 0, 0.251);
+   
+}
 
 /* deposite table */
 .Deposit {
@@ -195,6 +235,53 @@ table.table.table-extra {
     width: 65% !important;
 }
 
+.price_flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-color: #eff7f5;
+    border: 1pt solid rgba(0, 0, 0, 0.293);
+    padding-top: 40px;
+}
+.price_flex_A{
+    width: 45%;
+    margin-left: 2.5%;
+    
+}
+.flex_Aa_content{
+    padding-top: 20px;
+}
+.price_flex_B{
+    width: 45%;
+    margin-right: 2.5%;
+}
+
+.flex_Aa h3{
+    color: #155b37;
+}
+.flex_Ab{
+    padding-top: 60px;
+}
+.flex_Ab h3{
+    color: #155b37;
+}
+.charges_table{
+    margin-top: 40px;
+    
+}
+.charges_ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.charges_ul span{
+    width: 80%;
+}
+.tabs-three-listingss{
+    background-color: #e7e7e7;
+}
 
 /* responsive */
 
@@ -275,11 +362,31 @@ section#AmenitiesDetails {
     }
     section#plan-details {
         padding-top: 20PX;
-        padding-bottom: 20PX;
+        padding-bottom: 30PX;
     }
     #Payment-sec {
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+    .price_flex{
+        flex-direction: column;
+        
+
+        
+    }
+    .price_flex_A{
+        width: 100%;
+        
+    }
+    .flex_Aa{
+        width: 80%;
+    }
+    .price_flex_B{
+        margin-top: 40px;
+        width: 100%;
+    }
+    .flex_Ab{
+        width: 80%;
     }
 }
 
@@ -322,7 +429,7 @@ section#AmenitiesDetails {
 }
 section#AmenitiesDetails {
     padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 section#Specifications {
     padding-top: 0px;
