@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 const WaterSupply = () => {
+
+
+  const [water, setWater] = useState([]);
+  useEffect(() => {
+      async function waterdata() {
+          const waterdatas = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+          const waterdatass = await waterdatas.json();
+          setWater(waterdatass.acf.specification.water_supply);
+          //console.log(waterdatass.acf.specification.water_supply);
+      }
+      waterdata();
+
+    },[])
+
+
     return (
         <div>
-          <div className='wall-content'>
+          <div className='specification-ct'>
              <ul>
-              <li> Underground and Overhead water storage tanks of suitable capacity for water supply. </li>
+              <li>{water.water_supplyone}</li>
               
              </ul>        
           </div>

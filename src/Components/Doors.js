@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from 'react';
 const  Doors = () => {
-  // const [door, setDoor] = useState([]);
+  const [door, setDoor] = useState([]);
 
-  // useEffect(() => {
-  //   async function Doordata(){
-  //             const Doors = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
-  //             const Doorss = await Doors.json();
-  //             setDoor(Doorss.acf.doors_windows);
-  //           console.log(Doorss.acf.doors_windows);
+  useEffect(() => {
+    async function Doordata(){
+              const doors = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+              const doorss = await doors.json();
+              setDoor(doorss.acf.specification.doors_windows);
+            //console.log(doorss.acf.specification.doors_windows);
   
   
-  //   }
+    }
   
-  //   Doordata()
-  // },[])
+    Doordata()
+  },[])
   
 
 
   return (
     <div> 
       <div className='specification-ct'>    
-     {/* <ul>
+      <ul>
           <li>{door.doors_windowsone}</li>
           <li>{door.doors_windowstwo}</li>
           <li>{door.doors_windowsthree}</li>
@@ -29,7 +29,7 @@ const  Doors = () => {
           <li>{door.doors_windowssix}</li>
           <li>{door.doors_windowsseven}</li>
           <li>{door.doors_windowseight}</li>
-        </ul>    */}
+      </ul>
      </div>
     </div>
   )

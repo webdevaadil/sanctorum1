@@ -10,7 +10,7 @@ export const Tabthree = () => {
     const Grndflrdata = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
     const Grndflrdatas = await Grndflrdata.json();
     setGrndflr(Grndflrdatas.acf.four_bhk);
-    console.log(Grndflrdatas.acf.four_bhk);
+    //console.log(Grndflrdatas.acf.four_bhk);
   }
   useEffect(() => {
     

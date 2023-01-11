@@ -77,7 +77,7 @@ const Explore = () => {
   }
 
   return (
-    <div>
+    <div className="main-exploreouter">
       <section id='AmenitiesDetails'>
         <div className='container amenit-main'>
           <div className='explor-section'>
@@ -100,7 +100,7 @@ const Explore = () => {
         </div>
       </section >
 
-      <section id='Specifications' class="desktop-lists">
+      <section id='Specifications' className="desktop-lists">
         <div className='container'>
           {/* <h3>{exploredata.payment_plan_title}</h3>  */}
           <h3>Specifications</h3>
@@ -174,7 +174,7 @@ const Explore = () => {
         </div>
       </section>
 
-      <section id='Specifications' class="mobiles-lists">
+      <section id='Specifications' className="mobiles-lists">
         <div className='container'>
           {/* <h3>{exploredata.payment_plan_title}</h3>  */}
           <h3>Specifications</h3>
@@ -250,8 +250,8 @@ const Explore = () => {
 
 
 
-      <section class="tabs-three-listingss">
-        <div class="container">
+      <section className="tabs-three-listingss">
+        <div className="container">
 
         <div className='btn_grp'>
         <button className={showdata == false ? "btn btn-light buttonprice" : "nonecontent"} onClick={showtab}>Price (Click to know More)</button>

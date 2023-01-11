@@ -104,8 +104,8 @@ export const Footer = () => {
           </div>
           <div className='footer-rights'>
             <ul>
-              <li><a href="https://api.whatsapp.com/send?phone=917895461239&text=Hello,%20"><i class="fab fa-whatsapp"></i></a></li>
-              <li><a href="tel:+917895461239"><i class="fa fa-phone"></i></a></li>
+              <li><a href="https://api.whatsapp.com/send?phone=917895461239&text=Hello,%20"><i className="fab fa-whatsapp"></i></a></li>
+              <li><a href="tel:+917895461239"><i className="fa fa-phone"></i></a></li>
 
             </ul>
           </div>

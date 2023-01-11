@@ -38,7 +38,7 @@ export default function App() {
   }, []);
 
   const getData = () => {
-    fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/gallery_slider/')
+    fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/gallery_slider/?per_page=100')
       .then((response) => response.json())
       .then((res) => {
         setImagesData([...imagesData, ...res]);
@@ -112,6 +112,7 @@ export default function App() {
     gallerycon();
 
   }, [])
+  //console.log(glyttl);
 
   let videoRef = useRef();
   const [isPlaying, setIsPlaying] = useState(false);
@@ -127,7 +128,7 @@ export default function App() {
     <>
       <section id='gallery'>
         <div className='container'>
-          <h4> {glyttl.gallery_title}</h4>
+          {/* <h4> {glyttl.gallery_title}</h4> */}
           <h3>{glyttl.gallery_subtitle}</h3>
           <div className='galley-main'>
             <div className='conatiner'>
@@ -339,6 +340,10 @@ export default function App() {
         </div>
       </div>
       <Galleryvideo />
+
+
+      
+       
     </>
   );
 }

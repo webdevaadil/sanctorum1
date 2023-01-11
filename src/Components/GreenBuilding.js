@@ -1,18 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+
 
 const GreenBuilding = () => {
+
+  const [greenb, setGreenb] = useState([]);
+
+  useEffect(() => {
+    async function Greenb(){
+              const greenb = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+              const greenbs = await greenb.json();
+              setGreenb(greenbs.acf.specification.green_building_sustainable);
+              //console.log(greenbs.acf.specification.green_building_sustainable);
+    }
+  
+    Greenb()
+  },[])
+
+
     return (
         <div>
-          <div className='wall-content'>
+          <div className='specification-ct'>
              <ul>
-              <li> Natural Topography on 30% of Open Areas. </li>
-              <li>FSC certified wooden frames and doors.</li>
-              <li>Large windows for enhanced ventilation.</li>
-              <li>Solar Panels for reduced power consumption in Common Area Lighting.</li>
-              <li>Rain Water Harvesting.</li>
-              <li>Organic Waste Composter.</li>
-              <li>Use of low VOC paints.</li>
-              <li>Water efficient Kitchen and Bathroom fixtures.</li>
+              <li>{greenb.green_building_sustainableone}</li>
+              <li>{greenb.green_building_sustainabletwo}</li>
+              <li>{greenb.green_building_sustainablethree}</li>
+              <li>{greenb.green_building_sustainablefour}</li>
+              <li>{greenb.green_building_sustainablefive}</li>
+              <li>{greenb.green_building_sustainablesix}</li>
+              <li>{greenb.green_building_sustainableseven}</li>
+              <li>{greenb.green_building_sustainableeight}</li>
              </ul>        
           </div>
         </div>

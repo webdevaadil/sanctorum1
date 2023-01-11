@@ -1,18 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 const Electricals = () => {
+  const [electrical, setElectrical] = useState([]);
+
+  useEffect(() => {
+    async function Electrical(){
+              const electricals = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+              const electricalss = await electricals.json();
+              setElectrical(electricalss.acf.specification.electricals);
+              //console.log(electricalss.acf.specification.electricals);
+    }
+  
+    Electrical()
+  },[])
+
     return (
         <div>
-          <div className='wall-content'>
+          <div className='specification-ct'>
              <ul>
-              <li>Concealed Polycab/ Havells/ RR Kabel* copper wiring with modular switches of Anchor/ Roma/ Schneider Electric/ Havells/ Legrand*.</li>
-              <li>Energy efficient VRF Air-Conditioning with single outdoor unit per Apartment on an external ledge (Additional Cost). </li>
-              <li>TV points in all bedrooms & living rooms.</li>
-              <li>Telephone & Optical Fiber provision points in the living room. </li>
-              <li>Single DTH Provider to be selected by Developer.LAN cabling for smooth smart TV & OTT operations.</li>
-              <li>One 15A Geyser point in all toilets One AC point in all bedrooms, living & dining One washing machine point.</li>
-              <li>Modern MCBs and Changeovers of Havells/ HPL/ Schneider Electric*.</li>
-              <li>Provision for installation of Electric Car Chargers in Car Parking Areas.</li>
+              <li>{electrical.electricalsone}</li>
+              <li>{electrical.electricalstwo}</li>
+              <li>{electrical.electricalsthree}</li>
+              <li>{electrical.electricalsfour}</li>
+              <li>{electrical.electricalsfive}</li>
+              <li>{electrical.electricalssix}</li>
+              <li>{electrical.electricalsseven}</li>
+              <li>{electrical.electricalseight}</li>
              </ul>        
           </div>
         </div>

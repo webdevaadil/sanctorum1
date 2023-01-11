@@ -1,17 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 const Safety = () => {
+  const [safety, setSafety] = useState([]);
+
+  useEffect(() => {
+    async function safety(){
+              const safeti = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+              const safetis = await safeti.json();
+              setSafety(safetis.acf.specification.safetysecurity);
+              //console.log(safetis.acf.specification.safetysecurity);
+    }
+  
+    safety()
+  },[])
+
     return (
         <div>
-          <div className='wall-content'>
+          <div className='specification-ct'>
              <ul>
-              <li> Security Cabin at entry. </li>
-              <li>Fire Detection and Suppression systems.  </li>
-              <li>High Resolution IP based CCTV Cameras.</li>
-              <li>Round-the-clock manned security personnel. </li>
-              <li>Intercom facility</li>
-              <li>Fire Rated Doors at fire escape staircases.</li>
-              <li>Video Door Phone facility (Additional Cost).</li>
+              <li>{safety.safetysecurityone}</li>
+              <li>{safety.safetysecuritytwo}</li>
+              <li>{safety.safetysecuritythree}</li>
+              <li>{safety.safetysecurityfour}</li>
+              <li>{safety.safetysecurityfive}</li>
+              <li>{safety.safetysecuritysix}</li>
+              <li>{safety.safetysecurityseven}</li>
              </ul>        
           </div>
         </div>

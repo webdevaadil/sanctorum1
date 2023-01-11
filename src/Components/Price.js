@@ -5,18 +5,16 @@ export const Price = () => {
   const [exploredata, SetExploredata] = useState([]);
   const [explorecategory, setExplorecategory] = useState([]);
   const [explorecharges, setExplorecharges] = useState([]);
-
+  const [extracharg,setExtracharg] = useState([]);
   useEffect(() => {
     async function explorecontent() {
       const response = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
       const responsedata = await response.json();
       SetExploredata(responsedata.acf);
-
-      // console.log(responsedata.acf);
       setExplorecategory(responsedata.acf.table_categories);
-      // console.log(responsedata.acf.table_categories);
       setExplorecharges(responsedata.acf.charge);
-      // console.log("data",responsedata.acf.charge);
+      setExtracharg(responsedata.acf.extra_charge_content);
+      //console.log(responsedata.acf.extra_charge_content);
     }
     explorecontent();
 
@@ -49,10 +47,10 @@ export const Price = () => {
               {/* <h5>Mentionable additional charges include</h5> */}
               <div className='charges_table'>
                 {/* <ul className='charges_ul'> */}
-                <div className='charges_ul'><i class="fa fa-check-circle-o mt-2" aria-hidden="true"></i> <span>RCC-framed structure with anti-termite treatment in foundation.</span></div>
-                <div className='charges_ul'><i class="fa fa-check-circle-o mt-2" aria-hidden="true"></i> <span> Cements used: Ambuja/ OCL/ Lafarge/ Ultratech/ Birla/ ACC/ Ramco*</span></div>
-                <div className='charges_ul'><i class="fa fa-check-circle-o mt-2" aria-hidden="true"></i><span> Paint by certified Nerolac/ Asian Paints/ Berzer/ Akzo Nobel applicator*, and other effects as applicable.</span></div>
-                <div className='charges_ul'><i class="fa fa-check-circle-o mt-2" aria-hidden="true"></i><span>CP Fittings including Health Faucet/ Basin Mixer and Single Lever Diverter* of Jaquar/ Roca/ Kohler/ Grohe*.</span></div>
+                <div className='charges_ul'><i className="fa fa-check-circle-o mt-2" aria-hidden="true"></i> <span>{extracharg.extra_charge_1}</span></div>
+                <div className='charges_ul'><i className="fa fa-check-circle-o mt-2" aria-hidden="true"></i> <span>{extracharg.extra_charge_2}</span></div>
+                <div className='charges_ul'><i className="fa fa-check-circle-o mt-2" aria-hidden="true"></i><span>{extracharg.extra_charge_3}</span></div>
+                <div className='charges_ul'><i className="fa fa-check-circle-o mt-2" aria-hidden="true"></i><span>{extracharg.extra_charge_4}</span></div>
                 {/* <li>{expdata.extra_charge_content.extra_charge_4}</li>
                 <li>{expdata.extra_charge_content.extra_charge_5}</li> */}
                 {/* </ul> */}
