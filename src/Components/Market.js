@@ -16,8 +16,7 @@ const Market = () => {
 
     },[])
    
-
-  return (
+   return (
     <div>
       <Table className='right-content' bordered>
       <thead>

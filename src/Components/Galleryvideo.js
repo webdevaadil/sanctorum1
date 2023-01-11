@@ -30,8 +30,7 @@ export default function Galleryvideo() {
 
 
     const getData = () => {
-        
-        fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/video_gallery/?per_page=100')
+         fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/video_gallery/?per_page=100')
             .then((response) => response.json())
             .then((res) => {
                 setvideosData([...videosData, ...res]);
