@@ -51,11 +51,11 @@ export const Footer = () => {
             </div>
 
             <ul>
-              <li><img src={footerdata.map_icon} alt="Locate" /></li>
-              <li><a href="">{footerdata.address}</a></li>
+              <li><img src={footerdata.map_icon} alt="Locate"/></li>
+              <li><a href="javascript:void(0)">{footerdata.address}</a></li>
             </ul>
             <ul>
-              <li><img src={footerdata.mail_icon} alt="Email" /></li>
+              <li><img src={footerdata.mail_icon} alt="Email"/></li>
               <li> <a href={footerdata.mailto}>{footerdata.email_address}</a></li>
             </ul>
             <ul>
@@ -72,12 +72,12 @@ export const Footer = () => {
             <form ref={form} onSubmit={sendEmail}>
 
               <ul>
-                <li> <input type="text" name='name' value={formdata.name} id='name' placeholder='name' onChange={(e) => { setFormdata({ ...formdata, [e.target.name]:e.target.value }) }} /></li>
-                <li>  <input type="email" id='email' placeholder='Email' value={formdata.email} name='email' onChange={(e) => { setFormdata({ ...formdata, [e.target.name]: e.target.value }) }} /></li>
+                <li> <input type="text" name='name' value={formdata.name} id='name' placeholder='name' onChange={(e) => { setFormdata({ ...formdata, [e.target.name]:e.target.value }) }}  required/></li>
+                <li>  <input required type="email" id='email' placeholder='Email' value={formdata.email} name='email' onChange={(e) => { setFormdata({ ...formdata, [e.target.name]: e.target.value }) }} /></li>
               </ul>
 
               <ul>
-                <input type="phone" id='phone' name='phone' placeholder='Phone' value={formdata.phone} onChange={(e) => { setFormdata({ ...formdata, [e.target.name]: e.target.value }) }} />
+                <input pattern="[1-9]{1}[0-9]{9}" required type="tel" id='phone' name='phone' placeholder='Phone' value={formdata.phone} onChange={(e) => { setFormdata({ ...formdata, [e.target.name]: e.target.value }) }} />
 
 
               </ul>

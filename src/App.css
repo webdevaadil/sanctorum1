@@ -1066,6 +1066,24 @@ input:focus {
 
 }
 
+
+
+@media (max-width:1100px) {
+
+video.videoTag {
+    height:50vh;
+}
+
+.home-sec {
+    position: relative;
+    height:50vh;
+}
+
+}
+
+
+
+
 @media (max-width:992px) {
     .number-wrappers {
         display: flex;
@@ -1073,6 +1091,15 @@ input:focus {
         width: 81%;
         margin-left: 21px;
         margin-right: 22px;
+    }
+
+    video.videoTag {
+        height:35vh;
+    }
+
+    .home-sec {
+        position: relative;
+        height:35vh;
     }
 
     .qty-main .qty-text {
@@ -1287,6 +1314,7 @@ input:focus {
     section#plan-details .nav-tabs {
         margin-top: 15px;
     }
+
 }
 
 
@@ -1483,6 +1511,16 @@ input:focus {
     .tab-slider .carousel-control-next {
         right: 0px;
     }
+
+    video.videoTag {
+        height:35vh;
+    }
+
+    .home-sec {
+        position: relative;
+        height:35vh;
+    }
+
 }
 
 
@@ -1625,12 +1663,12 @@ input:focus {
     }
 
     video.videoTag {
-        height: 325px;
+        height:35vh;
     }
 
     .home-sec {
         position: relative;
-        height: 54vh;
+        height:35vh;
     }
 
     .qty-text{

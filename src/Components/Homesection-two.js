@@ -99,6 +99,9 @@ export const Homesectiontwo = () => {
 <div className="btns-se">
             <a href={brochure.url} target="_blank" className="browser-pdf">Download Brochure</a>
             </div>
+
+
+            
             <Galleryhome />
            
 

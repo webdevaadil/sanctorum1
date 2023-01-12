@@ -75,6 +75,7 @@ export default function Galleryvideo() {
     return (
         <>
             <section id='gallery' className="galleryvideoA">
+              <div id="video-gallery">
                 <div className='container'>
                     {/* <h4 > {glyttl.gallery_title}</h4> */}
                     <h3 className="galleryvideoh3">Our Videos</h3>
@@ -175,6 +176,7 @@ export default function Galleryvideo() {
                         </div>
 
                     </div>
+                   </div> 
                 </div>
             </section>
         </>
