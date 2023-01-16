@@ -7,7 +7,7 @@ export const Homesectiontwo = () => {
     const [brochure, setBrochure] = useState([]);
     useEffect(() => {
         async function hometwodata() {
-            const hometwodata = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+            const hometwodata = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
             const sethometwonew = await hometwodata.json();
             setHometwo(sethometwonew.acf);
             setBrochure(sethometwonew.acf.brochure_file)
@@ -35,17 +35,6 @@ export const Homesectiontwo = () => {
                         </div>
 
 
-                        {/* <div className='testedsf'>
-        
-        <ul>
-            <li><h4>{hometwo.section_two_right_colom_content_1}</h4></li>
-            <li><h4>{hometwo.section_two_right_colom_content_2}</h4></li>
-            <li><h4>{hometwo.section_two_right_colom_content_3}</h4></li>
-            <li><h4>{hometwo.section_two_right_colom_content_1}</h4></li>
-
-        </ul>
-        
-        </div> */}
 
 
                         <div className='bg-numbers'>

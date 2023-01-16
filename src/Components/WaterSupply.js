@@ -6,7 +6,7 @@ const WaterSupply = () => {
   const [water, setWater] = useState([]);
   useEffect(() => {
       async function waterdata() {
-          const waterdatas = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+          const waterdatas = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
           const waterdatass = await waterdatas.json();
           setWater(waterdatass.acf.specification.water_supply);
           //console.log(waterdatass.acf.specification.water_supply);

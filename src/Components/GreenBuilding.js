@@ -7,7 +7,7 @@ const GreenBuilding = () => {
 
   useEffect(() => {
     async function Greenb(){
-              const greenb = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+              const greenb = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
               const greenbs = await greenb.json();
               setGreenb(greenbs.acf.specification.green_building_sustainable);
               //console.log(greenbs.acf.specification.green_building_sustainable);

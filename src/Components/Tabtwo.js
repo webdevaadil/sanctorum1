@@ -7,7 +7,7 @@ export const Tabtwo = () => {
       const [tabtwo, setHometwo] = useState([]); 
       useEffect(() => {
           async function tabtwocontent(){
-              const tabtwodata = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+              const tabtwodata = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
               const tabtwodatashow = await tabtwodata.json();
                 setHometwo(tabtwodatashow.acf.three_bhk);
               //console.log(tabtwodatashow.acf);

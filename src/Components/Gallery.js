@@ -23,7 +23,7 @@ const Gallery = () => {
     <div>
         <section id='gallery'> 
         <div className='container'>
-         <h4> gallery  </h4>
+         <h4> gallery</h4>
          <h3>Recent Site Photos </h3>
           <div className='galley-main'>
            <div className='conatiner'> 

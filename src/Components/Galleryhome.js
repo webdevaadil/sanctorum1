@@ -38,7 +38,7 @@ export default function App() {
   }, []);
 
   const getData = () => {
-    fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/gallery_slider/?per_page=100')
+    fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/gallery_slider/?per_page=100')
       .then((response) => response.json())
       .then((res) => {
         setImagesData([...imagesData, ...res]);
@@ -105,9 +105,10 @@ export default function App() {
 
   useEffect(() => {
     async function gallerycon() {
-      const gallerycondata = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+      const gallerycondata = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
       const gallerycondatas = await gallerycondata.json();
       setGlyttl(gallerycondatas.acf);
+      //console.log(gallerycondatas.acf);
     }
     gallerycon();
 
@@ -129,7 +130,7 @@ export default function App() {
       <section id='gallery'>
         <div className='container'>
           {/* <h4> {glyttl.gallery_title}</h4> */}
-          <h3>{glyttl.gallery_subtitle}</h3>
+          <h3>{glyttl.gallery_title}</h3>
           <div className='galley-main'>
             <div className='conatiner'>
               <div className='desktop-gallery'>

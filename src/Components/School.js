@@ -6,7 +6,7 @@ const School = () => {
   const [schl, setSchl] = useState([]); 
   useEffect(() => {
       async function schldata() {
-          const schldatas = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+          const schldatas = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
           const schldatass = await schldatas.json();
           setSchl(schldatass.acf.school_data);
           // console.log(schldatass.acf.school_data);

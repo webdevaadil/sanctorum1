@@ -18,7 +18,7 @@ function Floorplan() {
 
   useEffect(() => {
     async function floordata(){
-              const floorcontentdata = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+              const floorcontentdata = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
               const floorcontentdatas = await floorcontentdata.json();
   setFloorcontent(floorcontentdatas.acf);
   //console.log(floorcontentdatas.acf);

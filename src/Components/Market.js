@@ -6,7 +6,7 @@ const Market = () => {
   const [mrkt, setMrkt] = useState([]); 
   useEffect(() => {
       async function markets() {
-          const marketdata = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+          const marketdata = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
           const marketdatas = await marketdata.json();
           setMrkt(marketdatas.acf.market_data);
           //console.log({df:marketdatas.acf.market_data});

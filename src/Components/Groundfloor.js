@@ -11,7 +11,7 @@ const [grndflr, setGrndflr] = useState([]);
 
 useEffect(() => {
   async function Grndflrs(){
-            const Grndflrdata = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+            const Grndflrdata = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
             const Grndflrdatas = await Grndflrdata.json();
             setGrndflr(Grndflrdatas.acf);
 //console.log(Grndflrdatas.acf);

@@ -11,7 +11,7 @@ export const Footer = () => {
   useEffect(() => {
     async function Footercontents() {
 
-      const footerdatas = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+      const footerdatas = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
       const footerdetails = await footerdatas.json();
       setFooterdata(footerdetails.acf);
       //console.log(footerdetails.acf);
@@ -46,23 +46,30 @@ export const Footer = () => {
       <div className='container'>
         <div className='footer-colms'>
           <div className='left-details'>
+          {footerdata && footerdata.footer_logo&& 
             <div className='foots-logo'>
               <img src={footerdata.footer_logo} alt="logo" />
             </div>
-
+          }
+          {footerdata && footerdata.map_icon&& 
             <ul>
+               
               <li><img src={footerdata.map_icon} alt="Locate"/></li>
-              <li><a href="javascript:void(0)">{footerdata.address}</a></li>
+              <li><a target="_blank" href={footerdata.address_link}>{footerdata.address}</a></li>
             </ul>
+          }
+          {footerdata && footerdata.mail_icon&& 
             <ul>
               <li><img src={footerdata.mail_icon} alt="Email"/></li>
               <li> <a href={footerdata.mailto}>{footerdata.email_address}</a></li>
             </ul>
+          }
+          {footerdata && footerdata.phone_icon&& 
             <ul>
               <li><img src={footerdata.phone_icon} alt="Phone" /></li>
               <li><a href={footerdata.callto}>{footerdata.phone_number}</a></li>
             </ul>
-
+          }
 
           </div>
 
@@ -72,7 +79,7 @@ export const Footer = () => {
             <form ref={form} onSubmit={sendEmail}>
 
               <ul>
-                <li> <input type="text" name='name' value={formdata.name} id='name' placeholder='name' onChange={(e) => { setFormdata({ ...formdata, [e.target.name]:e.target.value }) }}  required/></li>
+                <li> <input type="text" name='name' value={formdata.name} id='name' placeholder='Name' onChange={(e) => { setFormdata({ ...formdata, [e.target.name]:e.target.value }) }}  required/></li>
                 <li>  <input required type="email" id='email' placeholder='Email' value={formdata.email} name='email' onChange={(e) => { setFormdata({ ...formdata, [e.target.name]: e.target.value }) }} /></li>
               </ul>
 
@@ -104,7 +111,7 @@ export const Footer = () => {
           </div>
           <div className='footer-rights'>
             <ul>
-              <li><a href="https://api.whatsapp.com/send?phone=917895461239&text=Hello,%20"><i className="fab fa-whatsapp"></i></a></li>
+              <li><a href="https://api.whatsapp.com/send?phone=917895461239&text=Hello,%20" target='_blank'><i className="fab fa-whatsapp"></i></a></li>
               <li><a href="tel:+917895461239"><i className="fa fa-phone"></i></a></li>
 
             </ul>

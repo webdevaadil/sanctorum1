@@ -5,7 +5,7 @@ const Safety = () => {
 
   useEffect(() => {
     async function safety(){
-              const safeti = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+              const safeti = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
               const safetis = await safeti.json();
               setSafety(safetis.acf.specification.safetysecurity);
               //console.log(safetis.acf.specification.safetysecurity);

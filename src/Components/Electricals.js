@@ -5,7 +5,7 @@ const Electricals = () => {
 
   useEffect(() => {
     async function Electrical(){
-              const electricals = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+              const electricals = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
               const electricalss = await electricals.json();
               setElectrical(electricalss.acf.specification.electricals);
               //console.log(electricalss.acf.specification.electricals);

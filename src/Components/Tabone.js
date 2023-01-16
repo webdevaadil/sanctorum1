@@ -7,7 +7,7 @@ const [tabone, setTabone] = useState([]);
 
 useEffect(() => {
   async function tabonedata(){
-            const tabonedata = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+            const tabonedata = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
             const tabonedatas = await tabonedata.json();
 setTabone(tabonedatas.acf);
 //console.log(tabonedatas.acf);

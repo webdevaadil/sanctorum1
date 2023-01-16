@@ -19,7 +19,7 @@ export default function Galleryvideo() {
     const [videosData, setvideosData] = React.useState([]);
     const [isFinished, setIsFinished] = useState(false)
     const [index, setIndex] = useState(3)
-    const initialUsers = slice(videosData, 0, index)
+    const initialUsers = videosData.slice( 0, index)
 
     const [page, setPage] = React.useState(0);
 
@@ -30,14 +30,15 @@ export default function Galleryvideo() {
 
 
     const getData = () => {
-         fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/video_gallery/?per_page=100')
+         fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/video_gallery/?per_page=100')
             .then((response) => response.json())
             .then((res) => {
                 setvideosData([...videosData, ...res]);
+
             })
             .catch((err) => { });
     };
-   // console.log(videosData);
+    //console.log(videosData.length);
 
     const showMore = () => {
         setIndex(index + 3)
@@ -58,14 +59,27 @@ export default function Galleryvideo() {
 
     useEffect(() => {
         async function gallerycon() {
-            const gallerycondata = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/video_gallery/?per_page=100');
+            const gallerycondata = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/video_gallery/?per_page=100');
             const gallerycondatas = await gallerycondata.json();
             setGlyttl(gallerycondatas.acf);
-            // console.log(gallerycondatas.acf);
+            //console.log(gallerycondatas.acf);
         }
         gallerycon();
         
     }, [])
+
+    const [vdo, setVdo] = useState([]);
+    useEffect(() => {
+        async function vdodata() {
+            const vdodatas = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+            const vdodatass = await vdodatas.json();
+            setVdo(vdodatass.acf);
+            //console.log(vdodatass.acf);
+        }
+        vdodata();
+        
+    }, [])
+
 
     let videoRef = useRef();
     const [isPlaying, setIsPlaying] = useState(false);
@@ -78,7 +92,7 @@ export default function Galleryvideo() {
               <div id="video-gallery">
                 <div className='container'>
                     {/* <h4 > {glyttl.gallery_title}</h4> */}
-                    <h3 className="galleryvideoh3">Our Videos</h3>
+                    <h3 className="galleryvideoh3">{vdo.video_titles}</h3>
                     <div className='galley-main'>
                         <div className='conatiner'>
                             <div className='desktop-gallery'>
@@ -124,6 +138,13 @@ export default function Galleryvideo() {
                                             ))}
                                     </div>
                                 </div>
+
+
+
+                               
+
+                                          { videosData.length >= 3  ?
+
                                 <div className="video_btn">
                                     {
 
@@ -142,8 +163,10 @@ export default function Galleryvideo() {
                                         )}
 
                                 </div>
+                                :""
 
 
+                                        }
 
                             </div>
 

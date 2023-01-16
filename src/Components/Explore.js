@@ -38,7 +38,7 @@ const Explore = () => {
 
   useEffect(() => {
     async function explorecontent() {
-      const response = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+      const response = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
       const responsedata = await response.json();
       SetExploredata(responsedata.acf);
       // console.log(responsedata.acf);
@@ -54,7 +54,7 @@ const Explore = () => {
     explorecontent();
 
     async function amenities() {
-      const amenitiesdata = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/building_amenities/');
+      const amenitiesdata = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/building_amenities/');
       const amenitiesres = await amenitiesdata.json();
       setAmenity(amenitiesres);
       //  console.log("hello amentities",amenitiesres);
@@ -250,7 +250,7 @@ const Explore = () => {
 
 
 
-      <section className="tabs-three-listingss">
+      <section className="tabs-three-listingss" id="pricingplans">
         <div className="container">
 
         <div className='btn_grp'>

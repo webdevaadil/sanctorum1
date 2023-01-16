@@ -4,7 +4,7 @@ const  Doors = () => {
 
   useEffect(() => {
     async function Doordata(){
-              const doors = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+              const doors = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
               const doorss = await doors.json();
               setDoor(doorss.acf.specification.doors_windows);
             //console.log(doorss.acf.specification.doors_windows);

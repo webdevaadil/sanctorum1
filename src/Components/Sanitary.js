@@ -6,7 +6,7 @@ const Sanitary = () => {
 
   useEffect(() => {
     async function Sanitary(){
-              const sanitarys = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+              const sanitarys = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
               const sanitaryss = await sanitarys.json();
               setSanitary(sanitaryss.acf.specification.sanitary_cp_fittings);
               //console.log(sanitaryss.acf.specification.sanitary_cp_fittings);

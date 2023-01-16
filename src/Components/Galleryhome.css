@@ -231,6 +231,8 @@ section#gallery h3 {
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 600;
   margin-top: 20px;
+  border-radius: 5px;
+    border: 1px solid #155c37;
 }
 .video_btn{
   display: flex;
@@ -241,12 +243,29 @@ section#gallery h3 {
   margin: o auto !important;
   font-size: 16px;
   line-height: 26px;
+  border-radius: 5px;
+    border: 1px solid #155c37;
   color: #ffffff;
   font-weight: 600;
   font-family: "Red Hat Display";
   background-color: #154b37;
 }
 
+.showbtn_video:hover{
+  background: transparent;
+  color: #154b37;
+  transition: ease-in-out 0.5s all;
+  border: 1px solid  #154b37;
+
+}
+
+.showbtn:hover{
+  background: transparent;
+  color: #fff;
+  transition: ease-in-out 0.5s all;
+  border: 1px solid #fff;
+
+}
 .showbtn:focus:active {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
@@ -325,6 +344,7 @@ section#gallery h3 {
   .mob-gallery .carousel-item img {
     height: 300px;
     object-fit: cover;
+    padding-bottom: 0px;
     width: auto !important;
     margin: 0 auto;
     width: 100% !important;
@@ -341,8 +361,8 @@ section#gallery h3 {
     padding-bottom: 70px !important;
 }
 
-  .mob-gallery {
-    padding-top: 15px;
-  }
-
+.mob-gallery {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
 }

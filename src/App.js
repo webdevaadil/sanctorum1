@@ -7,7 +7,6 @@ import {Footer} from './Components/Footer';
 import Floorplan from './Components/Floorplan';
 import Mapreach from './Components/Mapreach';
 import Explore from './Components/Explore';
-import Video from './Components/Video';
 function App() {  
 
 

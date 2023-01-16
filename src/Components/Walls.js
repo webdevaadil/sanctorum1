@@ -5,7 +5,7 @@ const  Walls = () => {
   const [wall, setWall] = useState([]);
   useEffect(() => {
       async function walldata() {
-          const walls = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+          const walls = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
           const wallss = await walls.json();
           setWall(wallss.acf.specification.walls);
           //console.log(wallss.acf.specification.walls);

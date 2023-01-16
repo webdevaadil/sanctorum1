@@ -7,7 +7,7 @@ const Offices = () => {
   const [ofc, setOfc] = useState([]); 
   useEffect(() => {
       async function ofcdata() {
-          const ofcdatas = await fetch('http://sanctorum.in/wp-sanctorum/wp-admin/wp-json/wp/v2/pages/33');
+          const ofcdatas = await fetch('https://sanctorum.in/wp-sanctorum/wp-admin/wp-json/wp/v2/pages/33');
           const ofcdatass = await ofcdatas.json();
           setOfc(ofcdatass.acf.Offices_data);
            //console.log(ofcdatass.acf.Offices_data);

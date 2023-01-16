@@ -5,7 +5,7 @@ const Flooring = () => {
   const [flooring, setFlooring] = useState([]);
   useEffect(() => {
       async function Floorings() {
-          const floorings = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
+          const floorings = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/pages/33');
           const flooringss = await floorings.json();
           setFlooring(flooringss.acf.specification.flooringtiling);
           //console.log(flooringss.acf.specification.flooringtiling);

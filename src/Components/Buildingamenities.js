@@ -17,7 +17,7 @@ export default function Slider() {
 
       async function buidingpostsdata(){
 
-          const buidingpostsdatas = await fetch('http://sanctorum.in/wp-sanctorum/wp-json/wp/v2/building_amenities/');
+          const buidingpostsdatas = await fetch('https://sanctorum.in/wp-sanctorum/wp-json/wp/v2/building_amenities/');
 
           const buidposts = await buidingpostsdatas.json(); 
           setBuidingpost(buidposts);
