@@ -295,6 +295,12 @@ section#gallery h3 {
   .galley-main {
     display: block;
   }
+  .mob-gallery .carousel-item img {
+    height: auto;
+    object-fit: cover;
+    padding-bottom: 40px;
+    width: auto;
+}
 
   .photo-item {
     margin: 10px 0;
@@ -319,6 +325,8 @@ section#gallery h3 {
     padding-top: 30px;
   }
 
+
+
   #Specifications h3 {
     padding-bottom: 5px;
   }
@@ -342,7 +350,7 @@ section#gallery h3 {
     padding-bottom: 0px;
 }
   .mob-gallery .carousel-item img {
-    height: 300px;
+    height:auto;
     object-fit: cover;
     padding-bottom: 0px;
     width: auto !important;
