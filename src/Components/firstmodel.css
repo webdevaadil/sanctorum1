@@ -8,13 +8,28 @@
     padding: 0;
 }
 .modal-header {
-    
     position: fixed;
-    /* left: 0%; */
-    background-color: white;
     right: 60px;
-    width: 50px;
+    border: 0;
+    color: white;
 
+    border-radius: 10px;
+
+}
+button.btn-close {
+    /* border-radius: 10px; */
+    margin: 0 auto;
+    
+}
+.modal-header {
+    margin: 0 auto;
+}
+.modal-title.h4 {
+    
+    margin: 0 auto;
+}
+button.btn-close {
+    margin: 0 auto;
 }
 .modal-content {
     background-color: transparent;
