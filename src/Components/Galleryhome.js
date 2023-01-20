@@ -303,7 +303,7 @@ export default function App() {
 
       <div
         id='myModal'
-        className='modal'
+        className='modals'
         style={{
           display: imageModal.showModal ? "block" : "none"
         }}

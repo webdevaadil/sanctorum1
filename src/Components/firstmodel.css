@@ -9,10 +9,14 @@
 }
 .modal-header {
     
-    position: relative;
-    left: 530%;
+    position: fixed;
+    /* left: 0%; */
     background-color: white;
-    top: -93px;
+    right: 60px;
     width: 50px;
 
+}
+.modal-content {
+    background-color: transparent;
+    border: 0;
 }

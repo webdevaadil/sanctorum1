@@ -74,7 +74,7 @@ export const Firstfloor = () => {
 <Modal show={show} onHide={handleClose} style={{display:"flex"}}>
 
           <Modal.Body
-            style={{ backgroundColor:"black",zIndex: "22!important", display: "flex!important", width: "100%!important" }}
+            style={{zIndex: "22!important", display: "flex!important", width: "100%!important" }}
           > <Modal.Header closeButton >
           <Modal.Title></Modal.Title>
         </Modal.Header>

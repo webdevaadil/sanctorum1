@@ -60,7 +60,7 @@ section#gallery h3 {
 
 }
 
-.modal {
+.modals {
   display: none;
   position: fixed;
   /* z-index: 1; */
@@ -73,7 +73,7 @@ section#gallery h3 {
   background-color: black;
 }
 
-.modal-content {
+.modal-contents {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -81,10 +81,7 @@ section#gallery h3 {
   width: 90%;
   max-width: 500px;
 }
-.modal-content {
- 
- width: 130px;
-}
+
 
 .close {
   color: white;
