@@ -1,0 +1,18 @@
+.imghead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.modal-body{
+    padding: 0;
+}
+.modal-header {
+    
+    position: relative;
+    left: 530%;
+    background-color: white;
+    top: -93px;
+    width: 50px;
+
+}

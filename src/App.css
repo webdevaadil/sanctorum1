@@ -495,7 +495,7 @@ section#building .swiper.swiper-initialized.swiper-horizontal.swiper-pointer-eve
 }
 
 #floorplan img {
-    width: auto !important;
+    width: 40% !important;
     display: none;
     margin: 0 auto;
 }

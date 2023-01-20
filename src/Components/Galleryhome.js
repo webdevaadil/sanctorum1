@@ -323,7 +323,7 @@ export default function App() {
             style={{ display: imageModal.showModal ? "block" : "none" }}
           >
             <img
-              className='modal-content'
+              className='modal-contents'
               id="img01"
               src={imageModal.modalSrc}
               alt=""
