@@ -495,10 +495,17 @@ section#building .swiper.swiper-initialized.swiper-horizontal.swiper-pointer-eve
 }
 
 #floorplan img {
-    width: 40% !important;
+    width:450px !important;
     display: none;
     margin: 0 auto;
+    max-width: 100%;
 }
+.modal.show .modal-dialog {
+    transform: none;
+    width: 100%;
+    max-width: 800px;
+}
+
 
 .number-wrappers {
     background: #ffffffbf;
@@ -1554,6 +1561,15 @@ video.videoTag {
         position: relative;
         height:50vh;
     }
+
+    .modal.show .modal-dialog {
+        transform: none;
+        width: 100%;
+        max-width: 90% !important;
+        margin: 0 auto;
+        top: 20px;
+    }
+    
 
 }
 

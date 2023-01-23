@@ -8,13 +8,12 @@
     padding: 0;
 }
 .modal-header {
-    position: fixed;
-    right: 60px;
+    right: 0px;
     border: 0;
     color: white;
-
     border-radius: 10px;
-
+    position: absolute;
+   
 }
 button.btn-close {
     /* border-radius: 10px; */
