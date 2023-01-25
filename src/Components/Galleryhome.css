@@ -71,15 +71,17 @@ section#gallery h3 {
   height: 100%;
   overflow: auto;
   background-color: black;
+  z-index: 9999;
 }
 
+
 .modal-contents {
-  position: relative;
   background-color: #fefefe;
   margin: auto;
+  max-width: fit-content;
   padding: 0;
+  position: relative;
   width: 90%;
-  max-width: 500px;
 }
 
 
