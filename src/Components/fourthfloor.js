@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import Table from 'react-bootstrap/Table';
+import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import floor4_1 from './images/flor/F_4A.jpg';
 import floor4_2 from './images/flor/F_4B.jpg';

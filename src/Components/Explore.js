@@ -174,8 +174,9 @@ const Explore = () => {
         </div>
       </section>
 
+<div id="specification">
       <section id='Specifications' className="mobiles-lists">
-        <div className='container'>
+        <div className='container' >
           {/* <h3>{exploredata.payment_plan_title}</h3>  */}
           <h3>Specifications</h3>
 
@@ -247,7 +248,7 @@ const Explore = () => {
           </div>
         </div>
       </section>
-
+</div>
 
 
       <section className="tabs-three-listingss" id="pricingplans">
