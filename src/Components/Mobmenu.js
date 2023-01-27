@@ -108,7 +108,8 @@ const Mobmenu = () => {
                         <li><a className="menu__item" onClick={menufunction} href="#video-gallery" smooth="true" offset={0} duration={500}>{menu.label_4}</a></li>
                         <li><a className="menu__item" onClick={menufunction} href="#mapreacg-sec" smooth="true" offset={0} duration={500}>{menu.label_5}</a></li>
                         <li><a className="menu__item" onClick={menufunction} href="#floorplan" smooth="true" offset={0} duration={500}>{menu.label_6}</a></li>
-                        <li><a className="menu__item" onClick={menufunction} href="#specification" smooth="true" offset={0} duration={500}>{menu.label_7}</a></li>
+                        <li><a className="menu__item desktop" onClick={menufunction} href="#Specifications" smooth="true" offset={0} duration={500}>{menu.label_7}</a></li>
+                        <li><a className="menu__item mobile" onClick={menufunction} href="#specification" smooth="true" offset={0} duration={500}>{menu.label_7}</a></li>
                         <li><a className="menu__item" onClick={menufunction} href="#pricingplans" smooth="true" offset={0} duration={500}>{menu.label_8}</a></li>
                         <li><a className="menu__item" onClick={menufunction} href="#project-developed" smooth="true" offset={0} duration={500}>{menu.label_9}</a></li>
                         {/* <li><a className="menu__item" href="#connect" smooth="true" offset={-70} duration={500}>Get In Touch</a></li> */}

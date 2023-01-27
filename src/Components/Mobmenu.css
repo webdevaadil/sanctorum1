@@ -182,7 +182,8 @@ width: 150px;
   color: #154b37;
 }
 
-.mobile-menusss {
+.mobile-menusss,
+a.menu__item.mobile {
   display: none;
 }
 
@@ -248,6 +249,12 @@ width: 150px;
 @media (max-width:767px) {
   .menu__item {
     padding: 6px 24px;
+}
+a.menu__item.mobile {
+  display: block;
+}
+a.menu__item.desktop {
+  display: none;
 }
 
 .get-btn {
