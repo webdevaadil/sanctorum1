@@ -541,7 +541,6 @@ section#building .swiper.swiper-initialized.swiper-horizontal.swiper-pointer-eve
     justify-content: center;
 }
 .closedemo{
-    width: 0;
     text-align: end;
     margin-left: 30px;
 
@@ -994,7 +993,6 @@ section#project-developed {
     padding: 11px 23px;
     font-size: 14px;
     line-height: 28px;
-    color: #b8b8b8;
     font-weight: 400;
     font-family: 'Red Hat Display', sans-serif;
     width: 100%;
@@ -1009,7 +1007,7 @@ section#project-developed {
 .connect-right form ul label {
     font-size: 13px;
     line-height: 28px;
-    color: #b8b8b8;
+    /* color: #b8b8b8; */
     font-weight: 400;
     font-family: 'Red Hat Display', sans-serif;
 }
