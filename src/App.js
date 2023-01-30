@@ -20,6 +20,7 @@ function App() {
     <Projectdevelopedby/>
     {/* <Video/> */}
    <Footer/>
+   
     </>
   );
 }

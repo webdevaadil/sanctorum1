@@ -1,7 +1,7 @@
 {
   "name": "sanctorum",
   "version": "0.1.0",
-  "homepage": "https://sanctorum.in/",
+  "homepage": "https://controlf5.co.in/client-demo/sanctorum/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
